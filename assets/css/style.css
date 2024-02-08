@@ -21,7 +21,7 @@ main {
 
     .contact {
         & form {
-            height: 100px;
+            height: 200px;
             background-color: palegoldenrod;
         }
     }
@@ -49,6 +49,7 @@ footer {
     background-color: var(--boot-bg-secondary);
 
     color: var(--boot-lightest);
+
     & img {
         width: 50%;
     }
@@ -64,14 +65,20 @@ footer {
 
     .btn {
         border: 1px solid var(--boot-lightest);
-    
+
         & a {
             text-decoration: none;
             color: var(--boot-lightest);
         }
-    }    
+    }
 }
 
+.portfolio,
+.contact {
+    .divider {
+        color: var(--boot-bg-primary-subtle);
+    }
+}
 
 
 /* #endregion main */
