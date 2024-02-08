@@ -12,7 +12,7 @@ header {
 
 main {
     background-color: palegreen;
-    height: 500px;
+
 
     .hero_page {
         height: 50px;
@@ -21,8 +21,23 @@ main {
 
     .portfolio {
         & [class^="col"]:not(:first-child) {
-            height: 50px;
+            height: 100px;
             background-color: paleturquoise;
+        }
+
+    }
+
+    .about {
+        background-color: blueviolet;
+    & p {
+        background-color: palevioletred;
+    }
+    }
+
+    .contact {
+        & form {
+            height: 100px;
+            background-color: palegoldenrod;
         }
     }
 }
