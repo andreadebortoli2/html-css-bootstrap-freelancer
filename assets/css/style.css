@@ -1,3 +1,23 @@
+/* #region Debug */
+
 * {
     border: 1px dashed deepskyblue;
 }
+
+header {
+    background-color: navy;
+    height: 50px;
+}
+
+main {
+    background-color: palegreen;
+    height: 500px;
+}
+
+footer {
+    background-color: aquamarine;
+    height: 100px;
+}
+
+
+/* #endregion Debug */
