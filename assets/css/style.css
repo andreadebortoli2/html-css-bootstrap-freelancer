@@ -1,7 +1,15 @@
+:root {
+    --boot-lightest: rgba(255, 255, 255, 1);
+    --boot-darkest: rgba(51, 51, 51, 1);
+    --boot-bg-primary: rgba(44, 62, 80, 1);
+    --boot-bg-primary-subtle: rgba(58, 84, 109, 1);
+    --boot-bg-secondary: rgba(26, 188, 156, 1);
+}
+
 /* #region Debug */
 
 * {
-    border: 1px dashed deepskyblue;
+    /* border: 1px dashed deepskyblue; */
 }
 
 header {
@@ -10,12 +18,7 @@ header {
 }
 
 main {
-    background-color: palegreen;
-
-
-    .hero_page {
-        background-color: peachpuff;
-    }
+    
 
     .portfolio {
         & [class^="col"]:not(:first-child) {
@@ -61,3 +64,22 @@ footer {
 
 
 /* #endregion Debug */
+
+/* #region main */
+.hero_page {
+    background-color: var(--boot-bg-secondary);
+
+    color: var(--boot-lightest);
+    & img {
+        width: 50%;
+    }
+
+    .divider {
+        font-size: 2rem;
+    }
+}
+
+
+
+
+/* #endregion main */
