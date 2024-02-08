@@ -7,7 +7,6 @@
 header {
     background-color: navy;
     color: aliceblue;
-    height: 50px;
 }
 
 main {
@@ -43,8 +42,17 @@ main {
 }
 
 footer {
-    background-color: aquamarine;
-    height: 100px;
+    .top {
+        & [class^="col"] {
+            height: 50px;
+            background-color: deeppink;
+        }
+    }
+
+    .bottom {
+        background-color: navy;
+        color: aliceblue;
+    }
 }
 
 
