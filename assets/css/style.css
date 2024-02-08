@@ -6,12 +6,25 @@
 
 header {
     background-color: navy;
+    color: aliceblue;
     height: 50px;
 }
 
 main {
     background-color: palegreen;
     height: 500px;
+
+    .hero_page {
+        height: 50px;
+        background-color: peachpuff;
+    }
+
+    .portfolio {
+        & [class^="col"]:not(:first-child) {
+            height: 50px;
+            background-color: paleturquoise;
+        }
+    }
 }
 
 footer {
