@@ -19,13 +19,6 @@ header {
 
 main {
 
-    .about {
-        background-color: blueviolet;
-    & p {
-        background-color: palevioletred;
-    }
-    }
-
     .contact {
         & form {
             height: 100px;
@@ -61,6 +54,23 @@ footer {
     }
 }
 
+.about {
+    background-color: var(--boot-bg-secondary);
+    color: var(--boot-lightest);
+
+    & p {
+        text-align: start;
+    }
+
+    .btn {
+        border: 1px solid var(--boot-lightest);
+    
+        & a {
+            text-decoration: none;
+            color: var(--boot-lightest);
+        }
+    }    
+}
 
 
 
