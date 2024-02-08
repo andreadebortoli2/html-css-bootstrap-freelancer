@@ -14,7 +14,6 @@ main {
 
 
     .hero_page {
-        height: 50px;
         background-color: peachpuff;
     }
 
@@ -24,6 +23,11 @@ main {
             background-color: paleturquoise;
         }
 
+            & img {
+                height: 50px;
+                width: 50px;
+                background-color: dodgerblue;
+            }
     }
 
     .about {
