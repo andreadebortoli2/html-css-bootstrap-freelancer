@@ -18,20 +18,6 @@ header {
 }
 
 main {
-    
-
-    .portfolio {
-        & [class^="col"]:not(:first-child) {
-            height: 100px;
-            background-color: paleturquoise;
-        }
-
-            & img {
-                height: 50px;
-                width: 50px;
-                background-color: dodgerblue;
-            }
-    }
 
     .about {
         background-color: blueviolet;
@@ -72,10 +58,6 @@ footer {
     color: var(--boot-lightest);
     & img {
         width: 50%;
-    }
-
-    .divider {
-        font-size: 2rem;
     }
 }
 
