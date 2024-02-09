@@ -6,11 +6,24 @@
     --boot-bg-secondary: rgba(26, 188, 156, 1);
 }
 
+
+
+
+
 /* #region header */
 
 header {
     background-color: var(--boot-bg-primary);
     color: var(--boot-lightest);
+
+    .navbar-toggler {
+        border-color: var(--boot-lightest);
+        font-size: 1rem;
+        
+        .navbar-toggler-icon {
+            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgba(255, 255, 255, 1)" class="bi bi-list" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/></svg>'); 
+        }
+    }
 
     .nav-item:hover {
         background-color: var(--boot-bg-primary-subtle);
