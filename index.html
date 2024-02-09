@@ -16,27 +16,38 @@
 <body class="debug">
 
     <header>
+
         <nav class="navbar navbar-expand-sm">
+
             <div class="container">
-              <a class="navbar-brand text-reset fs-4 fw-semibold" href="#">START BOOTSTRAP</a>
-              <button class="navbar-toggler border-light fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
-                  <li class="nav-item">
-                    <a class="nav-link text-reset" href="#">PORTFOLIO</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-reset" href="#">ABOUT</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-reset" href="#">CONTACT</a>
-                  </li>
-                </ul>
-              </div>
+
+                <a class="navbar-brand text-reset fs-4 fw-semibold" href="#">START BOOTSTRAP</a>
+                <!-- /.navbar brand -->
+
+                <button class="navbar-toggler border-light fs-4" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- /.navbar btn -->
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item">
+                            <a class="nav-link text-reset" href="#">PORTFOLIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-reset" href="#">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-reset" href="#">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar collapse -->
             </div>
-          </nav>
+        </nav>
+        <!-- /.navbar -->
     </header>
 
     <main>
@@ -208,7 +219,40 @@
                     <!-- /.col -->
 
                     <div class="col-12">
-                        <form action="#" method="post"></form>
+                        <form action="#" method="post">
+
+                            <div class="form-floating mb-3 border-bottom">
+                                <input type="text" class="form-control border-0 border-0" id="text_input"
+                                    placeholder="Name">
+                                <label for="text_input">Name</label>
+                            </div>
+                            <!-- /.name -->
+
+                            <div class="form-floating mb-3 border-bottom">
+                                <input type="email" class="form-control border-0" id="email_input"
+                                    placeholder="name@example.com">
+                                <label for="email_inputt">Email address</label>
+                            </div>
+                            <!-- /.email -->
+
+                            <div class="form-floating mb-3 border-bottom">
+                                <input type="number" class="form-control border-0" id="phone_number_input"
+                                    placeholder="Phone Number">
+                                <label for="phone_number_input">Phone Number</label>
+                            </div>
+                            <!-- /.phone number -->
+
+                            <div class="form-floating mb-3 border-bottom">
+                                <textarea class="form-control border-0" id="message_input" placeholder="Message"
+                                    style="height: 200px;"></textarea>
+                                <label for="message_input">Message</label>
+                            </div>
+                            <!-- /.message -->
+
+                            <button class="btn" type="submit">Send</button>
+                            <!-- /.send -->
+
+                        </form>
                     </div>
                     <!-- /.col -->
                 </div>
@@ -284,14 +328,18 @@
 
         <div class="bottom">
 
-            <div class="row">
+            <div class="container">
 
-                <div class="col-12 text-center pt-4 pb-5">
-                    Copyright &copy; Your Website 2019
+                <div class="row">
+
+                    <div class="col-12 text-center pt-4 pb-5">
+                        Copyright &copy; Your Website 2019
+                    </div>
+                    <!-- /.col -->
                 </div>
-                <!-- /.col -->
+                <!-- /.row -->
             </div>
-            <!-- /.row -->
+            <!-- /.container -->
         </div>
         <!-- /.bottom -->
     </footer>

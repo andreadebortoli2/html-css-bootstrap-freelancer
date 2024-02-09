@@ -6,23 +6,6 @@
     --boot-bg-secondary: rgba(26, 188, 156, 1);
 }
 
-/* #region Debug */
-
-/* * {
-    border: 1px dashed deepskyblue;
-} */
-
-main {
-
-    .contact {
-        & form {
-            height: 200px;
-            background-color: palegoldenrod;
-        }
-    }
-}
-/* #endregion Debug */
-
 /* #region header */
 
 header {
@@ -36,7 +19,6 @@ header {
 
 .hero_page {
     background-color: var(--boot-bg-secondary);
-
     color: var(--boot-lightest);
 
     & img {
@@ -66,6 +48,16 @@ header {
 .contact {
     .divider {
         color: var(--boot-bg-primary-subtle);
+    }
+
+}
+
+.contact {
+    & form {
+        & button {
+            color: var(--boot-lightest);
+            background-color: var(--boot-bg-secondary);
+        }
     }
 }
 
