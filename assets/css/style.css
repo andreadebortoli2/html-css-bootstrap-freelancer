@@ -11,6 +11,10 @@
 header {
     background-color: var(--boot-bg-primary);
     color: var(--boot-lightest);
+
+    .nav-item:hover {
+        background-color: var(--boot-bg-primary-subtle);
+    }
 }
 
 /* #endregion header */
@@ -23,6 +27,44 @@ header {
 
     & img {
         width: 250px;
+    }
+}
+
+.portfolio,
+.contact {
+    .divider {
+        color: var(--boot-bg-primary-subtle);
+    }
+
+}
+
+.portfolio {
+
+    .card {
+        position: relative;
+
+        .add {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: none;
+            background-color: rgba(26, 188, 156, 0.5);
+            width: 100%;
+            height: 100%;
+
+            & i {
+                font-size: 3rem;
+                color: var(--boot-lightest);
+            }
+        }
+    }
+
+    .card:hover {
+        .add {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     }
 }
 
@@ -42,14 +84,13 @@ header {
             color: var(--boot-lightest);
         }
     }
-}
 
-.portfolio,
-.contact {
-    .divider {
-        color: var(--boot-bg-primary-subtle);
+    .btn:hover {
+        background-color: var(--boot-lightest);
+        & a {
+            color: var(--boot-bg-secondary);
+        }
     }
-
 }
 
 .contact {
@@ -58,6 +99,11 @@ header {
             color: var(--boot-lightest);
             background-color: var(--boot-bg-secondary);
         }
+    }
+
+    & button:hover {
+        border-color: var(--boot-bg-secondary);
+        color: var(--boot-bg-secondary);
     }
 }
 
@@ -84,7 +130,7 @@ footer {
             color: var(--boot-bg-secondary);
         }
     }
-    
+
     .bottom {
         background-color: var(--boot-bg-primary);
         font-size: 0.7rem;
