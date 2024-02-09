@@ -28,10 +28,6 @@ main {
 header {
     background-color: var(--boot-bg-primary);
     color: var(--boot-lightest);
-
-    .menu {
-        border: 2px solid var(--boot-lightest);
-    }
 }
 
 /* #endregion header */
@@ -44,7 +40,7 @@ header {
     color: var(--boot-lightest);
 
     & img {
-        width: 50%;
+        width: 250px;
     }
 }
 
@@ -83,8 +79,13 @@ footer {
     .top {
         background-color: var(--boot-bg-primary-subtle);
 
-        .fa-stack {
-            color: var(--boot-lightest);
+        .social {
+            white-space: nowrap;
+
+            & a {
+                color: var(--boot-lightest);
+                font-size: 0.8rem;
+            }
         }
 
         & span {
@@ -98,4 +99,4 @@ footer {
     }
 }
 
-/* #region footer */
+/* #endregion footer */
